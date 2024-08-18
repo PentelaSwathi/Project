@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+          width:100%;
+          display: flex;
+          column-gap: 5px;
+        }
+        #image{
+            width:70%;
+            height:800px;
+            background-image: url(banner-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+        .lgname{
+            margin-left:300px;
+        } 
+        .side1{
+            background-color: #ffc266;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+         hr{
+            width: 80%;
+            height: 4px;
+            background-color:white;
+            border: none;
+        }  
+        #second{
+            width: 100%;
+            display: flex;
+            column-gap: 5px;
+            height: 500px;
+        }
+        b{
+            background-color: #ac3939;
+            color: white;
+            padding: 10px;
+            height: 50px;
+            width:100px;
+            border-radius: 50px;
+        } 
+        #secondimg{
+            width:40% ;
+            height: 500px;
+            background-image: url(best-offer-bg.png);
+        }
+        .icons{
+            border: 2px solid white;
+            height: 100px;
+            width: 100px; 
+            border-radius: 100px;
+             margin-left: 40%;
+             margin-top: 23%;
+        }
+        .imgicons{
+             margin-left: 13px; 
+             margin-top: 20px; 
+        } 
+        .icontext{
+            margin-left:40% ;
+        }
+        #text{
+            width: 70%;
+            background-color: #f5f5f0;
+            height: 900px;
+            display: flex;
+            height: 500px;
+            align-items: center;
+            justify-content:space-around;
+        }
+        .text2{
+            width: 600px;
+        }
+        #third{
+            background-image: url(events-bg.png);
+            height:700px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 40px;
+         }
+        #meeting{
+            background-color: white;
+            height: 500px;
+            width: 1500px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+        .meet{
+            padding: 20px;
+        }
+        .child{
+            background-color:lightgray;
+            min-height: 100px;
+            width: 1500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+
+        }
+        .child1{
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+        }
+        .name{
+            width: 300px;
+        }
+        .time{
+            margin-left: 50px;
+        }
+        .date{
+            background-color: orange;
+            color: white;
+            margin-left: 10px;
+            width: 100px;
+            height: 70px;
+        }
+       .interested{
+        border-radius: 50px;
+        margin-right: 10px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        }
+        #forth{
+            display: flex;
+            width: 100%;
+            column-gap:10px;
+        }
+        #img3{
+            background-image: url(testimonial-bg.png);
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .smallball{
+           display: flex;
+           column-gap: 6px;
+        }
+        .ball{
+            height: 10px;
+            width:10px;
+            border-radius:100px;
+        }
+        #fifth{
+            width:100%;
+            display: flex;
+            background-image: url(services-bg.png);
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box1,.box2,.box3,.box4{
+            width: 25%;
+            height:400px;
+            background-color: #ffc266 ; 
+        }
+        .box2{
+            background-color: #ff944d;
+        }
+        .box3{
+            background-color:	 #ac3939;
+        }
+        .box4{
+            background-color:#ff8080;
+            align-items: center;
+        } 
+        #sixth{
+            width: 100%;
+            display: flex;
+            column-gap: 5px;
+            height: 400px;
+        }
+        .box5{
+            width: 35%;
+            height: 400px;
+            background-image: url(contact-right-bg.png);
+        }
+        #contact{
+            height: 400px;
+            width: 65%;
+            background-image: url(contact-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-content: center;
+        }
+       input{
+            box-shadow: 0 0 5px 0 ;
+            background: inherit;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px  solid white;
+       } 
+       .box{
+        margin-left: 350px;
+       }
+      footer{
+            width: 100%;
+            height: 50px;
+            background-color:#e6fffa;
+            align-content: center;
+        }
+       @media screen and (width<576px){
+        #first{
+          width:300vw;
+         display: flex; 
+         flex-direction: column;
+          /* column-gap: 5px; */
+        }
+        #image{
+            width:300vw;
+            height:150vh;
+            background-image: url(banner-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+        .lgname{
+            margin-left:300px;
+        } 
+        .side1{
+            background-color: #ffc266;
+            width: 300vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        #second{
+            width: 300vw;
+            display: flex;
+            column-gap: 5px;
+            height: 500px;
+        }
+        #third{
+            background-image: url(events-bg.png);
+            height:700px;
+            width:300vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 40px;
+         }
+         #meeting{
+            background-color: white;
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+        .child{
+            background-color:lightgray;
+            min-height: 100px;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+
+       }
+       #forth{
+            display: flex;
+            width: 300vw;
+            column-gap:10px;
+        }
+        #fifth{
+            width:300vw;
+            display: flex;
+            background-image: url(services-bg.png);
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #sixth{
+            width: 300vw;
+            display: flex;
+            column-gap: 5px;
+            height: 400px;
+        }
+        .box{
+            margin-left: 10px;
+        }
+        footer{
+            width: 300vw;
+            height: 50px;
+            background-color:#e6fffa;
+            align-content: center;
+        }
+       
+    }
+          
+    </style>
+</head>
+<body>
+    <section id="first">
+        <div id="image">
+            <p class="lgname" style="color: white;font-size: 20px;">There you go</p>
+            <hr  class="lgname" style="border: none;height: 3px;width:5%;background-color:#ff944d;"><br>
+            <strong class="lgname" style="color: white;font-size: 50px;">Clean & Minimal<br> Template</strong><br>
+            <b style="width: 120px;height: 30px;border-radius: 50px;color: white;border: 2px solid white;padding-left: 20px;padding-top: 10px;margin-left:300px ;background: none;">Discover More</b>
+        </div>
+        <div class="side1"> 
+            <img src="logo.png" height="100px" width="150px"><br><br>
+            <strong  style="color: white;">AVALON</strong>
+            <p>CREATIVE HTML TEMPLATE</p><br>
+            <hr>
+            <i style="text-align: center;">"Lorem ipsum dolor sit amet,consectuer  adipiscing elit Cura bitur et sem blandit,rhoncus ante ,varius libero.Cras elemen tum tincidunt ullamcorpe dictum tortor ut aliquet" </i><br>
+            <div>
+            <img src="facebook.png" height="50px" width="50px" style="background-color: white; border-radius: 50px;">
+            <img src="social.png" height="50px" width="50px" style="background-color: white; border-radius: 50px;">
+            <img src="linkedin.png" height="50px" width="50px" style="background-color: white; border-radius: 50px;">
+            <img src="RSS.png" height="50px" width="50px" style="background-color: white; border-radius: 50px;" >
+            <img src="dribble.png" height="50px" width="50px" style="background-color: white; border-radius: 50px;">
+            </div>
+        </div>
+    </section><br>
+    <section id="second">
+        <div id="secondimg">
+            <div class="icons">
+                 <img src="best-offer-icon.png" class="imgicons"> 
+            </div><br>
+                 <strong style="color: white;" class="icontext">Best offer for you</strong>
+        </div>
+       <div id="text">
+            <div class="text2">
+              <p style="font-size: 25px;">Awesome & Unique<br>
+                  Layout <span style="color: #ac3939;">Theme</span></p>
+              <p> Avalon is a full-width responsive web template.Please tell your friends about <span style="color: #ac3939;">templatemo</span>.Thank you.Feel free to use this template.Lorem ipsum dolor sit amet,consecteur adipiscing elit.Cura bitur et sem blandit,rhoncus ante ,varius libero.Cras elemen tum tincidunt ullamcorper.</p>
+              <i style="color: darkgray;">+Aenean eget ex fauibus,tempor nibh vel.<br>
+               +Bibendum totor.Suspendisse a diam viverra.<br>
+               +Finibus ipsum et,imperdiet feils.<br>
+               +Donec laoreet efficitur ultrices sit amet enim.</i><br><br>
+               <b>Discover More</b>
+        </div>
+               <img src="best-offer-image.png" height="300px">
+        </div>
+    </section><br>
+ <section id="third">
+    <div>
+        <button style="color: #ffc266;" class="meet">SHOW ALL</button>
+        <button class="meet">DESIGN MEETING</button>
+        <button class="meet">APP START UP</button>
+        <button class="meet">WEB CONFERENCES</button>
+    </div>
+        <div id="meeting">
+            <div class="child">
+                <div class="child1">
+                    <button class="date">12 <br> MAY</button>
+               <div class="name">
+                    <strong >FOUR LOKO FRAZEN </strong>
+                    <p style="color: brown;">Web Conferences</p>
+               </div>
+                <div class="time">
+                    <p>8:00AM-11:00AM</p>
+                    <p>Saturday</p>
+                </div>
+            </div>
+                    <button class="interested">I AM INTERESTED</button>
+            </div>
+            <div class="child">
+                <div class="child1">
+                    <button class="date">24 <br> APRIL</button>
+                <div class="name">
+                    <strong >DRINK VINEGAR COLORING</strong>
+                    <p style="color: red;">Design Meeting</p>
+                </div>
+                <div class="time">
+                   <p>3:00PM-07:00AM</p>
+                   <p>Tuesday</p>
+                </div>
+            </div>
+                   <button class="interested">I AM INTERESTED</button>
+            </div>
+            <div class="child">
+                <div class="child1">
+                    <button class="date">30 <br> MAR</button>
+                <div class="name">
+                     <strong >CORE HAMMOCK STILLER </strong>
+                     <p style="color: #ffc266;">App Start Up,Design Meeting</p>
+                </div>
+                <div class="time">
+                     <p>03:30PM-09:30PM</p>
+                     <p>Friday</p>
+                </div>
+            </div>
+                     <button class="interested">I AM INTERESTED</button>
+            </div>
+             <div class="child">
+                <div class="child1">
+                    <button class="date">22 <br> MAR</button>
+                <div class="name">
+                     <strong >PALO SANTO ART PARTY </strong>
+                      <p style="color: brown;">Web Conferences</p>
+                </div>
+                <div class="time">
+                      <p>10:00AM-05:00AM</p>
+                      <p>Thursday</p>
+                </div>
+            </div>
+                    <button class="interested">I AM INTERESTED</button>
+            </div>
+            <div class="child">
+                <div class="child1">
+                    <button class="date">15<br> MAR</button>
+                <div class="name">
+                    <strong >PALEO CRAFT BEER COPPER</strong>
+                    <p style="color: #ffc266;">App Start Up, Web Conferences</p>
+                </div>
+                <div class="time">
+                    <p>11:30AM-04:30AM</p>
+                    <p>Friday</p>
+                </div>
+            </div>
+                <button class="interested">I AM INTERESTED</button>
+            </div>
+</section><br>
+<section id="forth">
+    <img src="testimonial-left-image.png" height="400px" width="40%">
+        <div id="img3">
+           <img src="author_02.png" height="200px" width="200px" style="margin-top: 20px;"><br>
+           <i>Web Developer</i>
+           <h6>JOHNNY SMITH</h6>
+           <i>"Morbi elit est pharetra a,faaucibus dignissim augue.Quisque erat erat,placerat non pulvinar eget, <br> sodales eget ex.Cras pulvinar putus et ruturn faucibus"</i><br>
+           <div class="smallball">
+           <div class="ball" style="background-color: lightcoral;"></div>
+           <div class="ball" style="background-color: red;"></div>
+           <div class="ball" style="background-color: lightcoral;"></div>
+        </div>
+        </div>
+</section><br>
+ <section id="fifth">
+    <div class="box1">
+        <div class="icons">
+             <img src="heart-icon.png" class="imgicons">
+        </div><br>
+             <strong style="color: white;" class="icontext">ALIQUAM FINIBUST EST</strong>
+    </div>
+    <div class="box2">
+        <div class="icons">
+             <img src="home-icon.png" class="imgicons" height="50px" style="margin-left: 20px;">
+        </div><br>
+             <strong style="color: white;" class="icontext">NULLAM SED TURPIS</strong>
+    </div>
+    <div class="box3">
+        <div class="icons">
+             <img src="revision-icon.png" class="imgicons">
+        </div><br>
+             <strong style="color: white;" class="icontext">SEND IN LUCTUS</strong>
+    </div >
+    <div class="box4">
+        <div class="icons">
+             <img src="chat-icon.png" class="imgicons">
+        </div><br>
+             <strong style="color: white;" class="icontext">FUSCE CONGUE IPSUM</strong>
+    </div>
+</section><br>
+<section id="sixth">
+    <div id="contact">
+        <input type="text" placeholder="Your name..."  class="box">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Your email..." >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Subject... " ><br><br>
+        <input type="text" placeholder="Your message... " style="height: 150px;width: 700px;"  class="box"><br><br>
+        <button style="background-color: orange;color: white;padding: 20px;border-radius: 50px;" class="box"> SEND IT NOW </button>
+    </div>
+    <div class="box5">
+        <div class="icons">
+        <img src="map-marker-icon.png" class="imgicons" height="50px" style="margin-left: 35px;">
+    </div><br>
+        <strong style="color: white;" class="icontext">YOU CAN FINT US ON MAPS</strong>
+    </div>
+</section><br>
+<footer>
+    <p  style="text-align: center;">Copyright @ 2024 Your company <span style="color:red;">Avalon</span> by<span style="color:red;">HTML5 Max</span> </p>
+</footer>
+</body>
+</html>
